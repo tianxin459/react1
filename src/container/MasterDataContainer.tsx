@@ -5,7 +5,6 @@ import style from "./MasterDataContainer.module.scss";
 
 let MasterDataContainer: React.FC<any> = () => {
   let data = DataAccess.getData();
-  console.log(data);
   return <AppDatatable data={data}></AppDatatable>;
 };
 
