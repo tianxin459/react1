@@ -1,26 +1,13 @@
-import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
-import { Button } from "@mui/material";
+import style from "./App.module.scss";
+import MasterDataContainer from "./container/MasterDataContainer";
 
 function App() {
   return (
-    <div className="App">
+    <div className={style.App}>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Button variant="contained">Test</Button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p>this is header</p>
       </header>
+      <MasterDataContainer></MasterDataContainer>
     </div>
   );
 }
