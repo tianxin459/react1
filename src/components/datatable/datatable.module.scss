@@ -1,0 +1,21 @@
+.AppDatatable {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  :global {
+    .cell {
+      border: 0.5px solid lightgray;
+    }
+
+    header {
+      height: 40px;
+    }
+    main {
+      flex: 1;
+    }
+    footer {
+      height: 40px;
+    }
+  }
+}

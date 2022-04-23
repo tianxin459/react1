@@ -4,6 +4,7 @@ import * as Mockjs from "mockjs";
 
 export function mockMasterData(): MasterData {
   let masterData = Mockjs.mock({
+    id: Mockjs.Random.id(),
     asin: Mockjs.Random.id(),
     parentasin: Mockjs.Random.id(),
     sku: Mockjs.Random.word(),

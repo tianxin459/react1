@@ -1,9 +1,1 @@
-.datarow {
-  display: flex;
-  :global {
-    .cell {
-      text-overflow: ellipsis;
-      overflow: hidden;
-    }
-  }
-}
+@use "/src/components/DataHeader/DataHeader.module.scss";

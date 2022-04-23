@@ -13,16 +13,6 @@ export interface UserInfo {
   [key: string]: any;
 }
 
-export interface ColConfig {
-  name: string;
-  prop: string;
-  readonly?: boolean;
-  type?: enumDataType;
-  width?: number;
-  frozenleft?: boolean;
-  [key: string]: any;
-}
-
 export interface MasterData extends DataRow {
   asin: string;
   parentasin: string;

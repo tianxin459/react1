@@ -1,0 +1,14 @@
+.datarow,
+.dataheader {
+  display: flex;
+  :global {
+    .cell {
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+}
+
+.dataheader {
+  font-weight: bold;
+}

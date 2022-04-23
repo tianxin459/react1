@@ -1,4 +1,5 @@
 {
   "prettier.printWidth": 400,
-  "reactSnippets.settings.languageScopes": "typescript,typescriptreact"
+  "reactSnippets.settings.languageScopes": "typescript,typescriptreact",
+  "reactSnippets.settings.typescriptPropsStatePrefix": "interface"
 }
