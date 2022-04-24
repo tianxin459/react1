@@ -11,7 +11,16 @@ import About from "./components/About/About";
 const RouterConfig = [
   { path: "/", name: "Home", component: <MasterDataContainer></MasterDataContainer> },
   { path: "/counter", name: "Counter", component: <Counter></Counter> },
-  { path: "/about", name: "About", component: <About></About> },
+  {
+    path: "/about",
+    name: "About",
+    component: (
+      <Fragment>
+        <About></About>
+        <Counter></Counter>
+      </Fragment>
+    ),
+  },
   { path: "/masterdata", name: "MasterData", component: <MasterDataContainer></MasterDataContainer> },
 ];
 
@@ -53,7 +62,7 @@ let App = () => {
       <BrowserRouter>
         <Routes>
           {RouterConfig.map((config) => (
-            <Route path={config.path} element={config.component} />
+            <Route key={config.path} path={config.path} element={config.component} />
           ))}
         </Routes>
         <SwipeableDrawer anchor={"left"} open={sideNav} onClose={onClickHandler} onOpen={onClickHandler}>
