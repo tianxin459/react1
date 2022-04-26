@@ -1,5 +1,6 @@
 import { configureStore, createSlice } from "@reduxjs/toolkit";
 import counterSlice from "src/components/features/counter/counterSlice";
+import userSlice from "src/components/features/userSlice";
 
 const initialState = {
   counter: 0,
@@ -22,6 +23,7 @@ const initialState = {
 let store = configureStore({
   reducer: {
     counter: counterSlice,
+    users: userSlice,
   },
 });
 

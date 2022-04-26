@@ -7,6 +7,7 @@ import InboxIcon from "@mui/icons-material/MoveToInbox";
 import MenuIcon from "@mui/icons-material/Menu";
 import Counter from "./components/Counter/Counter";
 import About from "./components/About/About";
+import { UserList } from "./components/UserList/UserList";
 
 const RouterConfig = [
   { path: "/", name: "Home", component: <MasterDataContainer></MasterDataContainer> },
@@ -18,8 +19,14 @@ const RouterConfig = [
       <Fragment>
         <About></About>
         <Counter></Counter>
+        {/* <UserList></UserList> */}
       </Fragment>
     ),
+  },
+  {
+    path: "/user",
+    name: "User",
+    component: <UserList></UserList>,
   },
   { path: "/masterdata", name: "MasterData", component: <MasterDataContainer></MasterDataContainer> },
 ];
